@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Página de Pagamento</title>
+	<link rel="stylesheet" type="text/css" href="estilo_pag.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Pagamento</h1>
+
+		<img class="imagem" src="Imagem/camisa.png">
+
+		<form id="pagamentoForm">
+
+        <div class="formulario">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="formulario">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required>
+        </div>
+        <div class="formulario">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="opcoes_pag">
+            <label>Opções de Pagamento:</label><br>
+            <input type="radio" id="card" name="pagamento" value="cartao" checked>
+            <label for="cartao">Cartão</label><br>
+            <input type="radio" id="pix" name="pagamento" value="pix" >
+            <label for="pix">Pix</label><br>
+            <input type="radio" id="boleto" name="pagamento" value="boleto" >
+            <label for="boleto">Boleto</label>
+        </div>
+
+        <button type="submit" class="checkout-btn">Finalizar Compra</button>
+
+    	</form>
+
+	</div>
+
+    <script>
+        document.getElementById("pagamentoForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "compra_final.html"; 
+        });
+    </script>
+
+</body>
+</html>

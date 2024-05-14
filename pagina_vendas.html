@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Venda</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tela de Compra</h1>
+
+    <div class="produto">
+        <img src="Imagem/camisa.png" alt="Product Image">
+        <div class="produto-info">
+            <h2 class="produto-titulo">Camisa Azul Básica</h2>
+            <p class="produto-descricao">A camiseta masculina/unissex oferece qualidade premium, com toque macio e durabilidade notáveis. Sua gola redonda costurada com pesponto e costuras reforçadas garantem um acabamento impecável. Perfeita para uso diário ou personalização em estamparia e bordados, é uma escolha popular para eventos, uniformes e promoções. Confortável e versátil, é uma adição essencial ao guarda-roupa. 
+            </p>
+            <p class="produto-preco">$59.99</p>
+
+            <select class="size-select">
+                <option value="" disabled selected>Selecione o tamanho</option>
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g">G</option>
+                <option value="gg">GG</option>
+            </select>
+
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button id="botao1" class="btn">Tabela de Medidas</button>
+        <button id="botao2" class="btn">Provador Virtual</button>
+    </div>
+
+    <button id="pagamento" class="checkout-btn">Pagamento</button>
+
+    
+    <script>
+        document.getElementById("botao1").addEventListener("click", function() {
+  window.location.href = "https://vfr-v3-production.sizebay.technology/V4/?mode=chart&id=6834318&sid=0268AE364B4D212971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropHeight=970";
+});
+document.getElementById("botao2").addEventListener("click", function() {
+  window.location.href = "https://vfr-v3-production.sizebay.technology/V4/?mode=vfr&id=6834318&sid=0268AE364B4D212 971b52ba1410399862e3e7bfe2f30&lang=br&tenantId=1039&backdropWidth=1920&backdropHeight=970";
+});
+
+document.getElementById("pagamento").addEventListener("click", function() {
+  window.location.href = "pagina_pagamento.html";
+});
+
+</script>
+</div>
+
+</body>
+</html>

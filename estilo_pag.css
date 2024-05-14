@@ -1,0 +1,79 @@
+    body{
+font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .imagem {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .formulario {
+        margin-bottom: 20px;
+    }
+
+    .formulario label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+        width: calc(100% - 10px); /* Para compensar o padding */
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .endereco {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .endereco input[type="text"] {
+        width: 100%;
+    }
+
+    .opcoes_pag {
+        margin-top: 20px;
+    }
+
+    .opcoes_pag label {
+        font-weight: bold;
+    }
+
+    .checkout-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .checkout-btn:hover {
+        background-color: #0056b3;
+    }
